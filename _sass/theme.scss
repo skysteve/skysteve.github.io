@@ -24,7 +24,7 @@ $navbar-item-color: hsl(0, 0%, 96%);
 
 .footer {
     padding: 1rem 1.5rem 1rem;
-    position:absolute;
+    position: fixed;
     bottom:0;
     width: 100%;
     min-width: 100%;
@@ -57,5 +57,11 @@ $navbar-item-color: hsl(0, 0%, 96%);
         li + li {
             padding-top: 5px;
         }
+    }
+}
+
+.posts-list {
+    .card {
+        margin: 1rem;;
     }
 }
