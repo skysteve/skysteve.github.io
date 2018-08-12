@@ -1,18 +1,39 @@
 ---
 layout: page
 title: About
-permalink: /about/
+permalink: /about-me/
 ---
-
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
-
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+<div class="level">
+      <div class="level-item has-text-centered">
+            <div>
+                  <p class="title is-hidden-touch">Steve Jenkins</p>
+                  <p class="title is-hidden-desktop">Software Engineer</p>
+            </div>
+      </div>
+</div>
+<div class="columns">
+      <div class="column is-one-quarter">
+            <picture id="profile-picture">
+                  <!--<source srcset="/images/about-me/profile.webp"  type="image/webp" media="(min-width: 200px)">-->
+                  <img src="{{ "/assets/images/about-me/profile.jpg" | relative_url }}" />
+            </picture>
+      </div>
+      <div class="column is-half">
+            <p>Born in the Isle of Man in the early 90s Steve moved to Newcastle Upon Tyne in 2008 for University and has been
+                  here (close enough) ever since!</p>
+            <br>
+            <p>As a Software Engineer, Steve began writing code professionally in 2012. Since then he's specialised in web development
+                  focusing mainly on the frontend while having reasonable experience with Node.js.
+            </p>
+            <br>
+            <p>Currently based in the UK, Steve works on a mix of frontend and backend projects mostly in TypeScript and JavaScript</p>
+            <br>
+            <p>In his spare time, Steve likes to tinker with home automation projects and developing
+            progressive web apps using native web components.
+            </p>
+            <br>
+            <p>Steve also enjoys paragliding both in the UK and around the world, especially back home
+                  in the Isle of Man. Kitesurfing in the cold North Sea around Newcastle Upon Tyne. 
+                  Kayaking both in the sea and white water rivers. Climbing and generally being outside!</p>
+      </div>
+</div>

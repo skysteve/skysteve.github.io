@@ -1,0 +1,22 @@
+{
+  "name": "skysteve.io",
+  "version": "1.0.0",
+  "description": "skysteve.github.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skysteve/skysteve.github.io.git"
+  },
+  "author": "skysteve",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skysteve/skysteve.github.io/issues"
+  },
+  "homepage": "https://github.com/skysteve/skysteve.github.io#readme",
+  "dependencies": {
+    "bulma": "^0.7.1"
+  }
+}

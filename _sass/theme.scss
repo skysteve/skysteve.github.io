@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+// Customization
+$primary: #FB5050;
+$navbar-item-color: hsl(0, 0%, 96%);
+
+@import "bulma/bulma";
+
+.navbar-title {
+    font-weight: bold;
+}
+
+#profile-picture, #profile-picture img {
+    border-radius: 50%;
+}
+
+#home-img, #home-img img {
+    border-radius: 5%;
+}
+
+.blog-post {
+    margin-top: 1rem;
+}
+
+.footer {
+    padding: 1rem 1.5rem 1rem;
+    position:absolute;
+    bottom:0;
+    width: 100%;
+    min-width: 100%;
+    
+    .social-media-list {
+        list-style: none;
+        margin-left: 0;
+        max-height: 1rem;
+        height: 1rem;
+        position: relative;
+        top: -0.6rem;
+    
+        li {
+            display: inline;
+            margin-left: 0.5rem;
+    
+            a, svg, span {
+                display: inline;
+                max-height: 1rem;
+                height: 1rem;
+            }
+            svg {
+                max-width: 1rem;
+            }
+            span {
+                position: relative;
+                top: -0.2rem;
+            }
+        }
+        li + li {
+            padding-top: 5px;
+        }
+    }
+}
