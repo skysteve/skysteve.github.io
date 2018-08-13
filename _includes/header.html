@@ -12,7 +12,16 @@
       <div class="navbar-title has-text-centered navbar-item is-size-4">
         {{page.title}}
       </div>
-      <dv class="navbar-end is-hidden-mobile"></dv>
+      <div class="navbar-end is-hidden-mobile">
+        {%- if page.date -%}
+        <div class="navbar-item">
+          <b>Published:&nbsp;</b><time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+            {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
+            {{ page.date | date: date_format }}
+          </time>
+        </div>
+        {%- endif -%}
+      </div>
     </div>
   </nav>
 

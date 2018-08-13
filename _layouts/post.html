@@ -3,30 +3,26 @@ layout: default
 ---
 <div class="columns">
   <div class="column is-two-thirds">
+    <article class="content">
       {{ content }}
+    </article>
   </div>
   <div class="column is-one-third">
-      <p class="post-meta">
-          <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-            {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
-            {{ page.date | date: date_format }}
-          </time>
-      </p>
-
-      <figure id="post-author-image">
-        <picture id="profile-picture">
-          <!--<source srcset="/images/about-me/profile.webp"  type="image/webp" media="(min-width: 200px)">-->
-          <img src="{{ "/assets/images/about-me/profile.jpg" | relative_url }}" />
-        </picture>
-        <figcaption>
-          {%- if site.author -%}
-            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-              <span class="p-author h-card" itemprop="name">{{ site.author }}</span>
-            </span>
-          {%- endif -%}
-        </figcaption>
-      </figure>
-
+      <div class="post-meta is-pulled-right">
+        <figure id="post-author-image" class="image is-128x128 is-pulled-right">
+            <picture id="profile-picture">
+              <!--<source srcset="/images/about-me/profile.webp"  type="image/webp" media="(min-width: 200px)">-->
+              <img class="is-rounded" src="{{ "/assets/images/about-me/profile.jpg" | relative_url }}" />
+            </picture>
+            <figcaption>
+              {%- if site.data.author -%}
+                <span class="is-invisible" itemprop="author" itemscope itemtype="http://schema.org/Person">
+                  <b>Author: </b><span class="p-author h-card" itemprop="name">{{ site.data.author.name }}</span>
+                </span>
+              {%- endif -%}
+            </figcaption>
+          </figure>
+      </div>
   </div>
 </div>
 
