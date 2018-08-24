@@ -3,6 +3,14 @@
       <a class="navbar-item" href="/">
         <i class="fas fa-home"></i>
       </a>
+      <div class="navbar-title has-text-centered navbar-item is-size-4">
+          {{page.title}}
+        </div>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
     </div>
     <div class="navbar-menu">
       <div class="navbar-start">
@@ -24,6 +32,20 @@
       </div>
     </div>
   </nav>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const elBurgerNav = document.querySelector('.navbar-burger');
+  const elNavbarMenu = document.querySelector('.navbar-menu');
+
+  // Add a click event on each of them
+  elBurgerNav.addEventListener('click', () => {
+    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+    elBurgerNav.classList.toggle('is-active');
+    elNavbarMenu.classList.toggle('is-active');
+  });
+});
+</script>
 
 <!-- <header class="site-header" role="banner">
 

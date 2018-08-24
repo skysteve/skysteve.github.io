@@ -3,11 +3,37 @@
 // Customization
 $primary: #FB5050;
 $navbar-item-color: hsl(0, 0%, 96%);
+$navbar-dropdown-background-color: $primary;
+$navbar-background-color: rgba(251, 80, 80, 0.75);
 
 @import "bulma/bulma";
 
-.navbar-title {
+.navbar-brand {
+  .navbar-burger {
+    color: $navbar-item-color;
+  }
+
+  .navbar-title {
+    display: none;
+    @include touch {
+      display: inline;
+    }
+  }
+}
+
+.navbar-menu {
+  .navbar-title {
     font-weight: bold;
+    @include touch {
+      display: none;
+    }
+  }
+  .navbar-item {
+    @include touch {
+      color: #000;
+      text-align: right;
+    }
+  }
 }
 
 #profile-picture, #profile-picture img {
