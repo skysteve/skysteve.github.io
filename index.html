@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<div class="columns is-vcentered">
+  <div class="column">
+  {%- if site.posts.size > 5 -%}
+    <p class="heading has-text-centered">Latest Posts</p>
+    <table class="table table-striped table is-fullwidth">
+    {% for post in site.posts %}
+          <tr class="post-link" data-url="{{ post.url | relative_url }}">
+          {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
+                <td>{{ post.date | date: date_format }}</td>
+                <td><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></td>
+          </tr>
+    {% endfor %}
+    </table>
+  {%- else -%}
+    <div class="home-author">
+      <h1 class="title">{{site.data.author.name}}</h1>
+      <h2 class="subtitle">Software Engineer</h2>
+      <div class="gradient is-rounded"></div>
+      <p>Full stack engineer with a focus on frontend JavaScript and Node.js</p>
+      <a href="mailto:web@skysteve.com" class="button is-rounded is-primary" target="_blank">Get in Touch</a>
+      <br>
+      <div class="is-hidden-touch">
+      {%- include social.html -%}
+      </div>
+    </div>
+  {%- endif -%}
+  </div>
+  <div class="column">
+    <figure class="image is-square" id="home-img">
+      <picture>
+          <!--<source srcset="/images/index/img_2.webp"  type="image/webp" media="(min-width: 200px)">-->
+          <img src="{{ "/assets/images/index/img_2.png" | relative_url }}">
+      </picture>
+    </figure>
+  </div>
+</div>
