@@ -53,3 +53,37 @@
     }
   }
 }
+
+.posts-list {
+  a {
+    width: 100%;
+  }
+  .card {
+    border-radius: 1rem;
+    margin: 1rem;
+    width: 100%;
+    
+    .card-header {
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem;
+    }
+
+    .card-content {
+      padding-left: 0.75rem;
+      padding-top: 0.25rem;
+      padding-bottom: 0.25rem;
+    }
+
+    time {
+      padding: 0.75rem;
+    }
+
+    .post-tags {
+      justify-content: left;
+      .tags {
+        margin-left: 1rem;
+      }
+    }
+  }
+}
+
