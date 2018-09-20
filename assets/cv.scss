@@ -33,4 +33,41 @@
         font-weight: 600;
       }
     }
+    .personals {
+      display: none;
+    }
+}
+
+@media print
+{    
+    .hide-print, .hide-print *
+    {
+        display: none !important;
+    }
+
+    .personals {
+      display: inline-block !important;
+      float: right;
+    }
+    
+    .skills {
+      font-size: 0.9rem;
+    }
+
+    .footer .social-media-list li span {
+      position: static !important;
+      top: -3.2px !important;
+    }
+
+    a {
+      color: black;
+    }
+
+    .education {
+      page-break-before: always;
+    } 
+
+    hr {
+      display: none;
+    }
 }
