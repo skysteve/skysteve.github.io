@@ -23,9 +23,33 @@
 
     .job {
       h5 {
-        font-weight: 500;
+        font-weight: 600;
       }
       margin-bottom: 1rem;
+
+      .tech-used {
+        padding-top: 0.5rem;
+        h6 {
+          font-weight: 450;
+        }
+  
+        ul {
+          li {
+            display: inline;
+          }
+  
+          li:nth-child(odd) { 
+            font-weight: 100;
+          }
+    
+          li:after {
+            content: ", ";
+          }
+          li:last-child:after {
+            content: "" !important;
+          }
+        }
+      }
     }
 
     .education {
@@ -36,6 +60,8 @@
     .personals {
       display: none;
     }
+
+    
 }
 
 @media print
@@ -69,5 +95,9 @@
 
     hr {
       display: none;
+    }
+
+    .job {
+      font-size: 0.9rem;
     }
 }
