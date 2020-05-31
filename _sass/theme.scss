@@ -38,6 +38,7 @@ $navbar-background-color: rgba(251, 80, 80, 0.75);
 
 #profile-picture, #profile-picture img {
     border-radius: 50%;
+    object-fit: contain;
 }
 
 #home-img, #home-img img {
