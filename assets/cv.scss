@@ -5,99 +5,101 @@
 @import "theme";
 
 .cv {
-    h1 {
-        font-weight: 800;
-    }
-    h2 {
-        font-weight: 700;
-    }
-    h3 {
-        font-weight: 600;
-    }
-    h4 {
-        font-weight: 500;
-    }
+  h1 {
+    font-weight: 800;
+  }
+  h2 {
+    font-weight: 700;
+  }
+  h3 {
+    font-weight: 600;
+  }
+  h4 {
+    font-weight: 500;
+  }
+  h5 {
+    font-weight: 400;
+  }
+
+  .job {
     h5 {
-        font-weight: 400;
+      font-weight: 600;
     }
+    margin-bottom: 1rem;
 
-    .job {
-      h5 {
-        font-weight: 600;
+    .tech-used {
+      padding-top: 0.5rem;
+      h6 {
+        font-weight: 450;
       }
-      margin-bottom: 1rem;
 
-      .tech-used {
-        padding-top: 0.5rem;
-        h6 {
-          font-weight: 450;
+      ul {
+        li {
+          display: inline;
         }
-  
-        ul {
-          li {
-            display: inline;
-          }
-  
-          li:nth-child(odd) { 
-            font-weight: 100;
-          }
-    
-          li:after {
-            content: ", ";
-          }
-          li:last-child:after {
-            content: "" !important;
-          }
+
+        li:nth-child(odd) {
+          font-weight: 100;
+        }
+
+        li:after {
+          content: ", ";
+        }
+        li:last-child:after {
+          content: "" !important;
         }
       }
     }
+  }
 
-    .education {
-      h5 {
-        font-weight: 600;
-      }
+  .education {
+    h5 {
+      font-weight: 600;
     }
-    .personals {
-      display: none;
-    }
-
-    
+  }
+  .personals {
+    display: none;
+  }
 }
 
-@media print
-{    
-    .hide-print, .hide-print *
-    {
-        display: none !important;
-    }
+@page {
+  size: auto;
+  margin: 0mm;
+}
 
-    .personals {
-      display: inline-block !important;
-      float: right;
-    }
-    
-    .skills {
-      font-size: 0.9rem;
-    }
+@media print {
+  .hide-print,
+  .hide-print * {
+    display: none !important;
+  }
 
-    .footer .social-media-list li span {
-      position: static !important;
-      top: -3.2px !important;
-    }
+  .personals {
+    display: inline-block !important;
+    float: right;
+  }
 
-    a {
-      color: black;
-    }
+  .skills {
+    font-size: 0.9rem;
+  }
 
-    .education {
-      page-break-before: always;
-    } 
+  .footer .social-media-list li span {
+    position: static !important;
+    top: -3.2px !important;
+  }
 
-    hr {
-      display: none;
-    }
+  a {
+    color: black;
+  }
 
-    .job {
-      font-size: 0.9rem;
-    }
+  .education {
+    page-break-before: always;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .job {
+    font-size: 0.9rem;
+  }
 }
