@@ -62,12 +62,16 @@
   }
 }
 
-@page {
-  size: auto;
-  margin: 0mm;
-}
-
 @media print {
+  @page {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  body {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
   .hide-print,
   .hide-print * {
     display: none !important;
