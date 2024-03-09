@@ -1,7 +1,8 @@
-.download-link {
+.download-resume {
   display: inline;
   font-size: 1rem;
-  padding-top: 10px;
+  color: white;
+  text-decoration: none;
 }
 
 footer {

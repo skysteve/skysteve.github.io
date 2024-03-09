@@ -5,11 +5,8 @@ import Typography from "@mui/material/Typography";
 import { PDFDownloadLink } from "@react-pdf/renderer";
 import { ResumeDocument } from "../pages/resume/ResumeDocument";
 import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
-import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
-// import Link from '@mui/material/Link';
+import DownloadIcon from "@mui/icons-material/Download";
 
 interface HeaderProps {
   title: string;
@@ -37,7 +34,9 @@ export function Header(props: HeaderProps) {
         </Typography>
         {showResume && (
           <Button color="inherit">
+            <DownloadIcon color="action" />
             <PDFDownloadLink
+              className="download-resume"
               document={<ResumeDocument />}
               fileName="_Resume_Steve_Jenkins.pdf"
             >

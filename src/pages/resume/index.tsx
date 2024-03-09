@@ -1,4 +1,4 @@
-import { PDFDownloadLink, PDFViewer } from "@react-pdf/renderer";
+import { PDFViewer } from "@react-pdf/renderer";
 import { ResumeDocument } from "./ResumeDocument";
 import "./resume.css";
 import { Paper } from "@mui/material";
