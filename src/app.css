@@ -1,0 +1,11 @@
+.download-link {
+  display: inline;
+  font-size: 1rem;
+  padding-top: 10px;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
