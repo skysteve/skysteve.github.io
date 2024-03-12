@@ -17,6 +17,12 @@ export function ResumeDocument() {
   return (
     <Document title="Steve Jenkins Resume" author="Steve Jenkins" language="en">
       <Page size="LETTER" style={styles.page}>
+        <Text>
+          I'm a highly motivated, pro-active web developer & engineering manager
+          specializing in large web applications. With 10+ years post university
+          experience in fast paced start up companies in the UK and Canada.
+          Currently living Squamish, BC, Canada as a citizen.
+        </Text>
         <View style={styles.section}>
           <Text>Section #1</Text>
         </View>

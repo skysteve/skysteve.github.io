@@ -18,7 +18,7 @@ export function Header(props: HeaderProps) {
   const showResume = window.location.pathname === "/resume";
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" className="hide-print">
       <Toolbar>
         {/* <IconButton
           size="large"

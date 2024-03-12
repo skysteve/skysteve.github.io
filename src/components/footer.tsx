@@ -25,7 +25,11 @@ export function Footer(props: FooterProps) {
   // const { title } = useLoaderData() as any; // toDO not any
   const { title, description } = props;
   return (
-    <Box component="footer" sx={{ bgcolor: "background.paper", py: 2 }}>
+    <Box
+      component="footer"
+      sx={{ bgcolor: "background.paper", py: 2 }}
+      className="hide-print"
+    >
       <Container maxWidth="lg">
         <Typography variant="h6" align="center" gutterBottom>
           {title}

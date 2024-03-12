@@ -23,7 +23,7 @@ import getLPTheme from "./_theme";
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
-const mode = "dark";
+const mode = "light"; // "dark";
 
 const LPtheme = createTheme(getLPTheme(mode));
 
