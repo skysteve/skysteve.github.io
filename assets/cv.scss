@@ -60,6 +60,10 @@
   .personals {
     display: none;
   }
+
+  .print-only {
+    display: none;
+  }
 }
 
 @media print {
@@ -69,7 +73,7 @@
   }
 
   body {
-    padding-top: 15rem;
+    padding-top: 10rem;
     padding-bottom: 10rem;
   }
 
@@ -115,5 +119,9 @@
   .cv {
     position: relative;
     top: -180px;
+  }
+
+  .print-only {
+    display: unset;
   }
 }
