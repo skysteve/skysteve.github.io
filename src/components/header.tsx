@@ -10,7 +10,7 @@ import DownloadIcon from "@mui/icons-material/Download";
 import { useCallback } from "react";
 import { Box, IconButton } from "@mui/material";
 import { WrappedLink } from "./common/wrappedLink";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import HomeIcon from "@mui/icons-material/Home";
 import { LinkedIn } from "@mui/icons-material";
 import { SOCIAL_LINKS } from "../constants";
@@ -20,7 +20,7 @@ interface HeaderProps {
 }
 
 export function Header(props: HeaderProps) {
-  const { title } = props;
+  // const { title } = props;
   const { pathname } = useLocation();
 
   const showResume = pathname === "/resume";

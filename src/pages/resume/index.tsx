@@ -1,7 +1,7 @@
 // import { PDFViewer } from "@react-pdf/renderer";
 // import { ResumeDocument } from "./ResumeDocument";
 import "./resume.css";
-import { Grid, Paper } from "@mui/material";
+import { Grid } from "@mui/material";
 
 export function PageResume() {
   return (
