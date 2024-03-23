@@ -60,6 +60,10 @@
   .personals {
     display: none;
   }
+
+  .print-only {
+    display: none;
+  }
 }
 
 @media print {
@@ -70,7 +74,7 @@
 
   body {
     padding-top: 10rem;
-    padding-bottom: 5rem;
+    padding-bottom: 10rem;
   }
 
   .hide-print,
@@ -96,9 +100,9 @@
     color: black;
   }
 
-  .education {
-    page-break-before: always;
-  }
+  // .education {
+  //   page-break-before: always;
+  // }
 
   .page-break {
     page-break-before: always;
@@ -114,6 +118,14 @@
 
   .cv {
     position: relative;
-    top: -300px;
+    top: -180px;
+  }
+
+  .print-only {
+    display: unset;
+  }
+
+  .print-pad-top {
+    padding-top: 2rem;
   }
 }
