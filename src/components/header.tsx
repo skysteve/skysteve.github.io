@@ -23,7 +23,7 @@ export function Header(props: HeaderProps) {
   // const { title } = props;
   const { pathname } = useLocation();
 
-  const showResume = pathname === "/resume";
+  const showResume = pathname?.startsWith("/resume");
 
   const onDownload = useCallback(() => {
     const link = document.createElement("a");
