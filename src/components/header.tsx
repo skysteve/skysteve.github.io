@@ -8,9 +8,12 @@ import AppBar from "@mui/material/AppBar";
 import Button from "@mui/material/Button";
 import DownloadIcon from "@mui/icons-material/Download";
 import { useCallback } from "react";
-import { Box } from "@mui/material";
+import { Box, IconButton } from "@mui/material";
 import { WrappedLink } from "./common/wrappedLink";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import HomeIcon from "@mui/icons-material/Home";
+import { LinkedIn } from "@mui/icons-material";
+import { SOCIAL_LINKS } from "../constants";
 
 interface HeaderProps {
   title: string;
@@ -34,7 +37,7 @@ export function Header(props: HeaderProps) {
       <Toolbar>
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
           <WrappedLink to="/" color="inherit">
-            {title}
+            <HomeIcon />
           </WrappedLink>
         </Typography>
         {showResume && (
@@ -45,6 +48,16 @@ export function Header(props: HeaderProps) {
             </Button>
           </Box>
         )}
+        <WrappedLink
+          to={SOCIAL_LINKS.linkedIn}
+          target="_blank"
+          color="inherit"
+          rel="noreferrer"
+        >
+          <IconButton size="large" color="inherit">
+            <LinkedIn />
+          </IconButton>
+        </WrappedLink>
       </Toolbar>
     </AppBar>
   );

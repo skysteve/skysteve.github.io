@@ -4,6 +4,8 @@ import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
+import { LinkedIn } from "@mui/icons-material";
+import { SOCIAL_LINKS } from "../../constants";
 
 export function PageIndex() {
   return (
@@ -25,12 +27,12 @@ export function PageIndex() {
               {/* <Button size="small">Github</Button> */}
               {/* <Button size="small">LinkedIn</Button> */}
               <Link
-                href="https://www.linkedin.com/in/skysteve/"
+                href={SOCIAL_LINKS.linkedIn}
                 target="_blank"
                 color="inherit"
                 rel="noreferrer"
               >
-                LinkedIn
+                <LinkedIn />
               </Link>
             </CardActions>
           </Card>
