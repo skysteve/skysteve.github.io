@@ -1,0 +1,119 @@
+.pdf-viewer {
+  width: 100%;
+  height: 100%;
+  min-height: 90vh;
+}
+
+.cv {
+  h1 {
+    font-weight: 800;
+  }
+  h2 {
+    font-weight: 700;
+  }
+  h3 {
+    font-weight: 600;
+  }
+  h4 {
+    font-weight: 500;
+  }
+  h5 {
+    font-weight: 400;
+  }
+
+  .job {
+    h5 {
+      font-weight: 600;
+    }
+    margin-bottom: 1rem;
+
+    .tech-used {
+      padding-top: 0.5rem;
+      h6 {
+        font-weight: 450;
+      }
+
+      ul {
+        li {
+          display: inline;
+        }
+
+        li:nth-child(odd) {
+          font-weight: 100;
+        }
+
+        li:after {
+          content: ", ";
+        }
+        li:last-child:after {
+          content: "" !important;
+        }
+      }
+    }
+  }
+
+  .education {
+    h5 {
+      font-weight: 600;
+    }
+  }
+  .personals {
+    display: none;
+  }
+}
+
+@media print {
+  @page {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  body {
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+  }
+
+  .hide-print,
+  .hide-print * {
+    display: none !important;
+  }
+
+  .personals {
+    display: inline-block !important;
+    float: right;
+  }
+
+  .skills {
+    font-size: 0.9rem;
+  }
+
+  .footer .social-media-list li span {
+    position: static !important;
+    top: -3.2px !important;
+  }
+
+  a {
+    color: black;
+  }
+
+  .education {
+    page-break-before: always;
+  }
+
+  .page-break {
+    page-break-before: always;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .job {
+    font-size: 0.9rem;
+  }
+
+  .cv {
+    position: relative;
+    top: -300px;
+  }
+}
