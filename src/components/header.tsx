@@ -14,6 +14,7 @@ import { useLocation } from "react-router-dom";
 import HomeIcon from "@mui/icons-material/Home";
 import { LinkedIn } from "@mui/icons-material";
 import { SOCIAL_LINKS } from "../constants";
+import { ProjectsMenu } from "./projectsMenu";
 
 interface HeaderProps {
   title: string;
@@ -35,11 +36,17 @@ export function Header(props: HeaderProps) {
   return (
     <AppBar position="static" className="hide-print">
       <Toolbar>
-        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+        <Typography variant="h6" component="div">
           <WrappedLink to="/" color="inherit">
             <HomeIcon />
           </WrappedLink>
         </Typography>
+        <ProjectsMenu />
+        <Typography
+          variant="h6"
+          component="div"
+          sx={{ flexGrow: 1 }}
+        ></Typography>
         {showResume && (
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             <Button sx={{ color: "#fff" }} onClick={onDownload}>
