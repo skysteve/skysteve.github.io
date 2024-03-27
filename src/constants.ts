@@ -3,6 +3,13 @@ export const SOCIAL_LINKS = {
 };
 
 export const PROJECTS = [
-  { name: "tic-tac-toe", url: "/tic-tac-toe" },
+  { name: "tic-tac-toe", url: "/tic-tac-toe/" },
   // { name: "Mood Lists", url: "http://moodlists.skysteve.com/#" },
+];
+
+export const CONFERENCE_TALKS = [
+  {
+    name: "Headless commerce",
+    url: "https://www.youtube.com/watch?v=jtjqPi5SOlg&list=PLzlG0L9jlhEM-EcMHjQJBJbqyFtgZCd9D&index=7",
+  },
 ];
