@@ -85,9 +85,9 @@ export function ProjectsMenu() {
       >
         {PROJECTS.map((project) => (
           <MenuItem onClick={handleClose} disableRipple key={project.name}>
-            <link color="inhrit" href={project.url}>
+            <Link color="inhrit" href={project.url}>
               {project.name}
-            </link>
+            </Link>
           </MenuItem>
         ))}
       </StyledMenu>
