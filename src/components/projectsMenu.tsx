@@ -4,6 +4,7 @@ import Menu, { MenuProps } from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import { PROJECTS } from "../constants";
 import { WrappedLink } from "./common/wrappedLink";
+import Link from "@mui/material/Link";
 
 const StyledMenu = styled((props: MenuProps) => (
   <Menu
@@ -84,9 +85,9 @@ export function ProjectsMenu() {
       >
         {PROJECTS.map((project) => (
           <MenuItem onClick={handleClose} disableRipple key={project.name}>
-            <WrappedLink color="inhrit" to={project.url}>
+            <link color="inhrit" href={project.url}>
               {project.name}
-            </WrappedLink>
+            </link>
           </MenuItem>
         ))}
       </StyledMenu>

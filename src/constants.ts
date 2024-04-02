@@ -10,6 +10,6 @@ export const PROJECTS = [
 export const CONFERENCE_TALKS = [
   {
     name: "Headless commerce",
-    url: "https://www.youtube.com/watch?v=jtjqPi5SOlg&list=PLzlG0L9jlhEM-EcMHjQJBJbqyFtgZCd9D&index=7",
+    url: "https://www.youtube.com/watch?v=jtjqPi5SOlg",
   },
 ];
